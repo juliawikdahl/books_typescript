@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+    grid-gap: 2rem;
+
+}
+
+.book-detail-container {
+    display: flex;
+    padding: 20px;
+    width: 800px;
+    color: white;
+    position: relative;
+}
+
+.book-cover {
+    position: relative;
+    min-width: 280px;
+    min-height: 470px;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.book-cover h2,
+.book-cover p {
+    position: absolute;
+   
+    left: 1rem;
+    padding: 5px;
+    color: black;
+}
+
+.book-cover h2 {
+    bottom: 20px; /* Höjd för att ge utrymme för författaren under rubriken */
+}
+
+.book-cover p {
+    bottom: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.book-info {
+    margin-left: 2rem;
+}
+
+.info-title h2, .info-title p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.info-plot {
+    margin-top: 2rem;
+}
+
+.goback {
+    position: absolute;
+    top: -10px; /* Justera detta värde för att placera knappen längre upp eller nedåt */
+    left: 20px;
+}
+.small-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(66, 64, 64, 0.131);
+    padding-left: 1rem;
+    
+}
+
+.info-background {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Sätt minsta höjden till hela viewport-höjden */
+    background-color: rgb(30, 30, 30); /* Svart bakgrundsfärg för hela sidan */
+    color: white; /* Vit textfärg för kontrast */
+}
