@@ -52,10 +52,6 @@ fetch(`https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-ap
         console.error('Fel vid hämtning av bok:', error);
     });
 
-// ...
-
-
-
 
 function goBack() {
     window.history.back();

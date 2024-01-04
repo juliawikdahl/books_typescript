@@ -2,6 +2,8 @@
     "compilerOptions": {
         "target": "ES6", // Vilken JS version ska vi kompilera till
         "outDir": "./dist", // Var ska JS-filen hamna? I vilken mapp?
+        "module": "es6",
+        "moduleResolution": "node",
        
     },
     "include": ["./src"], // Vad för filer ska vi kompilera till JS?

@@ -15,10 +15,20 @@
     <main>
         <header>
             <h1>8 Classic Childrens books</h1>
+            <form id="searchForm" class="form-container"  action="#" method="post"> 
+                <div>
+                    <label for="name">Search for a Book Title or an Author:</label>
+                    <input type="text" id="name" name="name">
+                    <button type="submit">Search</button>
+                </div>
+                <div id="searchResults" class="searchResults"></div>
+            </form>
         </header>
+        
         <article id="bookshelf" class="gridSystem"></article>
     </main>
     
     <script  src="./index.js"></script>
+    <script src="./allbooks.js" type="module"></script>
 </body>
 </html>
