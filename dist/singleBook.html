@@ -12,17 +12,18 @@
 </head>
 <body class="info-background">
 
-    <div id="bookDetail" class="book-detail-container">
-        <div class="book-cover" id="cover">
+    <main id="bookDetail" class="book-detail-container">
+        
+        <article id="cover">
             <h2 id="title"></h2>
             <p id="author"></p>
-        </div>
+        </article>
 
-        <div class="book-info" id="infoContainer">
-            <div class="info-title">
+        <section class="book-info" id="infoContainer">
+            <header class="info-title">
                 <h2 id="info-title"></h2>
                 <p id="info-author"></p>
-            </div>
+            </header>
             <p id="plot" class="info-plot"></p>
             <div class="small-info">
             <p id="audience"></p>
@@ -32,10 +33,10 @@
             </div>
 
             <button onclick="goBack()" class="goback"><span class="arrow-left">&#8592;</span></button>
-        </div>
-    </div>
+        </section>
+    </main>
    
-    <script src="./singleBook.js"></script>
+    <script  src="./singleBook.js"></script>
    
 
  

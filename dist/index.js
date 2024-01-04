@@ -1,16 +1,24 @@
 const bookshelf = document.getElementById('bookshelf');
 fetch('https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books')
-    .then(response => response.json())
-    .then(books => {
+    .then(response => {
+    if (!response.ok) {
+        throw new Error('Nätverkssvar var inte OK');
+    }
+    return response.json();
+})
+    .then((books) => {
     books.forEach(book => {
         const bookCover = createBookCover(book);
         bookshelf.appendChild(bookCover);
     });
+})
+    .catch(error => {
+    console.error('Fel vid hämtning av böcker:', error);
 });
 function createBookCover(book) {
     const cover = document.createElement('div');
     cover.classList.add('book-cover');
-    cover.style.backgroundColor = book.color;
+    cover.style.background = `linear-gradient(135deg, ${book.color} 60%, #aabbcc 100%)`;
     const title = document.createElement('h2');
     title.textContent = book.title;
     const author = document.createElement('p');
